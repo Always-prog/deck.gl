@@ -10,11 +10,7 @@ A controller class can be passed to either the `Deck` class's [controller](./dec
 The base Controller class supports the following options:
 
 * `scrollZoom` (Boolean|Object) - enable zooming with mouse wheel. Default `true`. If an object is supplied, it may contain the following fields to customize the zooming behavior:
-  + `speed` (Number) - scaler that translates wheel delta to the change of viewport scale. Default `0.01`.
-  + `smooth` (Boolean) - smoothly transition to the new zoom. If enabled, will provide a slightly lagged but smoother experience. Default `false`.
-* `dragPan` (Boolean) - enable panning with pointer drag. Default `true`
-* `dragRotate` (Boolean) - enable rotating with pointer drag. Default `true`
-* `doubleClickZoom` (Boolean) - enable zooming with double click. Default `true`
+  + `speed` (Number) - scaler that translates wheel delta to the change ofragPan and dragRotate - ['p`true`
 * `touchZoom` (Boolean) - enable zooming with multi-touch. Default `true`
 * `touchRotate` (Boolean) - enable rotating with multi-touch. Use two-finger rotating gesture for horizontal and three-finger swiping gesture for vertical rotation. Default `false`
 * `keyboard` (Boolean|Object) - enable interaction with keyboard. Default `true`. If an object is supplied, it may contain the following fields to customize the keyboard behavior:
@@ -126,7 +122,7 @@ Note that the following events are always toggled on/off by user options:
 * `scrollZoom` - `['wheel']`
 * `dragPan` and `dragRotate` - `['pan']`
 * `touchZoom` - `['pinch']`
-* `touchRotate` - `['pinch', 'tripan]`
+* `touchRotate` - `['pinch', 'tripan']`
 * `doubleClickZoom` - `['doubletap']`
 * `keyboard` - `['keydown']`
 
